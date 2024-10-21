@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symptom Diagnostics</title>
+    <title>Symptom Diagnostics - SmartPath Diagnostics</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>AI-Powered Symptom Diagnostics</h1>
+        <h1>Symptom Diagnostics</h1>
     </header>
-    
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="symptom-diagnostics.html">Symptom Diagnostics</a>
+        <a href="doctor-recommendations.html">Doctor Recommendations</a>
+        <a href="first-aid.html">First Aid</a>
+    </nav>
+
     <main>
-        <p>Enter your symptoms and our AI will suggest possible conditions:</p>
-        <input type="text" id="symptoms" placeholder="Enter symptoms...">
-        <button onclick="diagnose()">Diagnose</button>
-        <p id="result"></p>
+        <h2>Enter Your Symptoms Below:</h2>
+        <form>
+            <label for="symptoms">Symptoms: </label>
+            <input type="text" id="symptoms" name="symptoms" placeholder="e.g., headache, fever">
+            <button type="submit">Diagnose</button>
+        </form>
     </main>
 
     <footer>
